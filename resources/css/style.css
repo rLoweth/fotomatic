@@ -47,14 +47,13 @@ header .content {
   display: flex;
   align-items: center;
   padding: 1.875rem;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
-header .logo {
+header .content #logo {
   flex: 1;
-  color: #4A4A4A;
-  font-size: 16px;
-  font-family: Roboto-Regular;
-  line-height: 1.6;
+  font-family: "Rubic", sans-serif;
 }
 
 header nav ul {
@@ -68,8 +67,9 @@ nav li {
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 16px;;
   color: #4a4a4a;
+  font-family: Roboto-Regular;
 }
 
 header .icon {
@@ -116,6 +116,11 @@ header .mobile {
 
 /* Sign Up Section */
 
+#sign-up-section img {
+  z-index: 1;
+  position: absolute;
+}
+
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
@@ -124,10 +129,14 @@ header .mobile {
 }
 
 #sign-up-cta {
+  z-index: 2;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-top: 170px;
+  margin-left: 100px;
+  margin-bottom: 170px;
 }
 
 #sign-up-cta .content {
@@ -156,8 +165,10 @@ header .mobile {
 }
 
 #sign-up-cta .striking {
-  font-family: "Rubik", sans-serif;
-  padding-bottom: .75rem;
+  font-family: "Rubik";
+  padding-bottom: 12px;
+  font-size: 50px;
+  font-weight: lighter;
 }
 
 #sign-up-cta .button {
